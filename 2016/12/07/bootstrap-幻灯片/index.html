@@ -6,17 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ifeier.cc">
-  <title>Feier的博客</title>
+  <title>bootstrap--幻灯片 | Feier的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Feier的博客">
-<meta property="og:url" content="//ifeier.cc/index.html">
+  <meta name="description" content="前言先说说幻灯片的实现原理吧，大致我知道的只有两种：1，通过display：none，图片隐藏起来，然后通过js操作css，实现需要显示的图片，加上定时器实现轮播。2，通过overflow：hide，将图片隐藏起来。3，通过index控制，实现幻灯片。">
+<meta name="keywords" content="bootstrap,html,javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bootstrap--幻灯片">
+<meta property="og:url" content="//ifeier.cc/2016/12/07/bootstrap-幻灯片/index.html">
 <meta property="og:site_name" content="Feier的博客">
-<meta property="og:description" content="擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
+<meta property="og:description" content="前言先说说幻灯片的实现原理吧，大致我知道的只有两种：1，通过display：none，图片隐藏起来，然后通过js操作css，实现需要显示的图片，加上定时器实现轮播。2，通过overflow：hide，将图片隐藏起来。3，通过index控制，实现幻灯片。">
+<meta property="og:image" content="http://w3schools.bootcss.com/howto/img_nature_wide.jpg">
+<meta property="og:image" content="http://w3schools.bootcss.com/howto/img_fjords_wide.jpg">
+<meta property="og:image" content="http://w3schools.bootcss.com/howto/img_lights_wide.jpg">
+<meta property="og:image" content="http://w3schools.bootcss.com/howto/img_mountains_wide.jpg">
+<meta property="og:updated_time" content="2017-09-07T05:45:31.068Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Feier的博客">
-<meta name="twitter:description" content="擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
+<meta name="twitter:title" content="bootstrap--幻灯片">
+<meta name="twitter:description" content="前言先说说幻灯片的实现原理吧，大致我知道的只有两种：1，通过display：none，图片隐藏起来，然后通过js操作css，实现需要显示的图片，加上定时器实现轮播。2，通过overflow：hide，将图片隐藏起来。3，通过index控制，实现幻灯片。">
+<meta name="twitter:image" content="http://w3schools.bootcss.com/howto/img_nature_wide.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Feier的博客" type="application/atom+xml">
   
@@ -162,57 +169,215 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-实例five" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-bootstrap-幻灯片" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/05/实例five/">实例5</a>
+    <h1 class="article-title" itemprop="name">
+      bootstrap--幻灯片
     </h1>
   
 
         
-        <a href="/2017/09/05/实例five/" class="archive-article-date">
-  	<time datetime="2017-09-05T02:02:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-05</time>
+        <a href="/2016/12/07/bootstrap-幻灯片/" class="archive-article-date">
+  	<time datetime="2016-12-07T02:29:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>
-<h2 id="HEXO-STSART"><a href="#HEXO-STSART" class="headerlink" title="HEXO STSART"></a>HEXO STSART</h2><h3 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h3><p>‘’’ bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’ bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk<br>
-        
-          <a class="article-more-a" href="/2017/09/05/实例five/#more">more >></a>
-        
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>先说说幻灯片的实现原理吧，大致我知道的只有两种：<br>1，通过display：none，图片隐藏起来，然后通过js操作css，实现需要显示的图片，加上定时器实现轮播。<br>2，通过overflow：hide，将图片隐藏起来。<br>3，通过index控制，实现幻灯片。<br><a id="more"></a><br>本文主要讲第一种方法。</p>
+<h3 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h3><div style="max-width:1000px;min-width:250px;position:relative;margin:auto;"><br><br><div class="mySlides fade"><br>  <img src="http://w3schools.bootcss.com/howto/img_nature_wide.jpg" style="width:100%"><br></div>
+
+<div class="mySlides fade"><br>  <img src="http://w3schools.bootcss.com/howto/img_fjords_wide.jpg" style="width:100%"><br></div>
+
+<div class="mySlides fade"><br>  <img src="http://w3schools.bootcss.com/howto/img_lights_wide.jpg" style="width:100%"><br></div>
+
+<div class="mySlides fade"><br>  <img src="http://w3schools.bootcss.com/howto/img_mountains_wide.jpg" style="width:100%"><br></div>
+
+
+<p><a class="slprev" onclick="plusSlides(-1)" style="cursor: pointer; position: absolute; top: 0; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 50% 50% 0; background-color: rgba(0,0,0,0.8);">&#10094;</a><br><a class="slnext" onclick="plusSlides(1)" style="cursor: pointer; position: absolute; top: 0; top: 50%; width: auto; padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 50% 0 0 50%; right: 0; background-color: rgba(0,0,0,0.8);">&#10095;</a></p>
+<p></p></div><br><br><p></p>
+<script>
+var slideIndex = 1;
+var zd=setInterval(auto,3000);
+function auto(){
+   plusSlides(1);
+}
+
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].classList.remove("slideractive");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].classList.add("slideractive");
+}
+</script>
+
+<p>以上是简单展示效果。</p>
+<h3 id="创建幻灯片"><a href="#创建幻灯片" class="headerlink" title="创建幻灯片"></a>创建幻灯片</h3><h4 id="1-添加html"><a href="#1-添加html" class="headerlink" title="1. 添加html"></a>1. 添加html</h4><p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 添加容器 --&gt;</div><div class="line">&lt;div class=&quot;slideshow-container&quot;&gt; </div><div class="line">	&lt;!-- 第一张图片盒子  --&gt;</div><div class="line">	&lt;div class=&quot;mySlides fade&quot;&gt;</div><div class="line">		&lt;!-- 上标题 --&gt;</div><div class="line">	    &lt;div class=&quot;numbertext&quot;&gt;1 / 3&lt;/div&gt;</div><div class="line">	    &lt;!-- 图片 --&gt;</div><div class="line">	    &lt;img src=&quot;img1.jpg&quot; style=&quot;width:100%&quot;&gt;</div><div class="line">	    &lt;!-- 下标题 --&gt;</div><div class="line">	    &lt;div class=&quot;text&quot;&gt;Caption Text&lt;/div&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">  	&lt;div class=&quot;mySlides fade&quot;&gt;</div><div class="line">    	&lt;div class=&quot;numbertext&quot;&gt;2 / 3&lt;/div&gt;</div><div class="line">	    &lt;img src=&quot;img2.jpg&quot; style=&quot;width:100%&quot;&gt;</div><div class="line">	    &lt;div class=&quot;text&quot;&gt;Caption Two&lt;/div&gt;</div><div class="line">  	&lt;/div&gt;</div><div class="line"></div><div class="line">  	&lt;div class=&quot;mySlides fade&quot;&gt;</div><div class="line">	    &lt;div class=&quot;numbertext&quot;&gt;3 / 3&lt;/div&gt;</div><div class="line">	    &lt;img src=&quot;img3.jpg&quot; style=&quot;width:100%&quot;&gt;</div><div class="line">	    &lt;div class=&quot;text&quot;&gt;Caption Three&lt;/div&gt;</div><div class="line">  	&lt;/div&gt;</div><div class="line">	&lt;!-- 上一张，下一张导航 --&gt;</div><div class="line">  	&lt;a class=&quot;prev&quot; onclick=&quot;plusSlides(-1)&quot;&gt;&amp;#10094;&lt;/a&gt;</div><div class="line">  	&lt;a class=&quot;next&quot; onclick=&quot;plusSlides(1)&quot;&gt;&amp;#10095;&lt;/a&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;!-- 大容器结束 --&gt;</div><div class="line">&lt;br&gt;</div><div class="line">&lt;!-- 幻灯片导航 --&gt;</div><div class="line">&lt;div style=&quot;text-align:center&quot;&gt;</div><div class="line">	&lt;span class=&quot;dot&quot; onclick=&quot;currentSlide(1)&quot;&gt;&lt;/span&gt; </div><div class="line">	&lt;span class=&quot;dot&quot; onclick=&quot;currentSlide(2)&quot;&gt;&lt;/span&gt; </div><div class="line">	&lt;span class=&quot;dot&quot; onclick=&quot;currentSlide(3)&quot;&gt;&lt;/span&gt; </div><div class="line">&lt;/div&gt;</div><div class="line">&lt;!-- 幻灯片导航结束 --&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="2-添加css"><a href="#2-添加css" class="headerlink" title="2. 添加css"></a>2. 添加css</h3><p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div></pre></td><td class="code"><pre><div class="line">/* 大容器 */</div><div class="line">.slideshow-container &#123;</div><div class="line">  max-width: 1000px;</div><div class="line">  position: relative;</div><div class="line">  margin: auto;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 上（下）一张按钮 */</div><div class="line">.prev, .next &#123;</div><div class="line">  cursor: pointer;</div><div class="line">  position: absolute;</div><div class="line">  top: 50%;</div><div class="line">  width: auto;</div><div class="line">  margin-top: -22px;</div><div class="line">  padding: 16px;</div><div class="line">  color: white;</div><div class="line">  font-weight: bold;</div><div class="line">  font-size: 18px;</div><div class="line">  transition: 0.6s ease;</div><div class="line">  border-radius: 0 3px 3px 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 下一张按钮 定位 */</div><div class="line">.next &#123;</div><div class="line">  right: 0;</div><div class="line">  border-radius: 3px 0 0 3px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.prev:hover, .next:hover &#123;</div><div class="line">  background-color: rgba(0,0,0,0.8);</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 下标题样式 */</div><div class="line">.text &#123;</div><div class="line">  color: #f2f2f2;</div><div class="line">  font-size: 15px;</div><div class="line">  padding: 8px 12px;</div><div class="line">  position: absolute;</div><div class="line">  bottom: 8px;</div><div class="line">  width: 100%;</div><div class="line">  text-align: center;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*上标题样式 */</div><div class="line">.numbertext &#123;</div><div class="line">  color: #f2f2f2;</div><div class="line">  font-size: 12px;</div><div class="line">  padding: 8px 12px;</div><div class="line">  position: absolute;</div><div class="line">  top: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 幻灯片导航样式*/</div><div class="line">.dot &#123;</div><div class="line">  cursor:pointer;</div><div class="line">  height: 13px;</div><div class="line">  width: 13px;</div><div class="line">  margin: 0 2px;</div><div class="line">  background-color: #bbb;</div><div class="line">  border-radius: 50%;</div><div class="line">  display: inline-block;</div><div class="line">  transition: background-color 0.6s ease;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.active, .dot:hover &#123;</div><div class="line">  background-color: #717171;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 幻灯片图片转换动画 */</div><div class="line">.fade &#123;</div><div class="line">  -webkit-animation-name: fade;</div><div class="line">  -webkit-animation-duration: 1.5s;</div><div class="line">  animation-name: fade;</div><div class="line">  animation-duration: 1.5s;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@-webkit-keyframes fade &#123;</div><div class="line">  from &#123;opacity: .4&#125; </div><div class="line">  to &#123;opacity: 1&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">@keyframes fade &#123;</div><div class="line">  from &#123;opacity: .4&#125; </div><div class="line">  to &#123;opacity: 1&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="3-添加javascript"><a href="#3-添加javascript" class="headerlink" title="3. 添加javascript"></a>3. 添加javascript</h3><p>代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">var slideIndex = 1;</div><div class="line">showSlides(slideIndex);</div><div class="line"></div><div class="line">function plusSlides(n) &#123;</div><div class="line">  showSlides(slideIndex += n);</div><div class="line">&#125;</div><div class="line"></div><div class="line">function currentSlide(n) &#123;</div><div class="line">  showSlides(slideIndex = n);</div><div class="line">&#125;</div><div class="line"></div><div class="line">function showSlides(n) &#123;</div><div class="line">  var i;</div><div class="line">  var slides = document.getElementsByClassName(&quot;mySlides&quot;);</div><div class="line">  var dots = document.getElementsByClassName(&quot;dot&quot;);</div><div class="line">  if (n &gt; slides.length) &#123;slideIndex = 1&#125; </div><div class="line">  if (n &lt; 1) &#123;slideIndex = slides.length&#125; ;</div><div class="line">  for (i = 0; i &lt; slides.length; i++) &#123;</div><div class="line">      slides[i].style.display = &quot;none&quot;; </div><div class="line">  &#125;</div><div class="line">  for (i = 0; i &lt; dots.length; i++) &#123;</div><div class="line">      dots[i].className = dots[i].className.replace(&quot; active&quot;, &quot;&quot;);</div><div class="line">  &#125;</div><div class="line">  slides[slideIndex-1].style.display = &quot;block&quot;; </div><div class="line">  dots[slideIndex-1].className += &quot; active&quot;;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">bootstrap</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/05/实例five/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://ifeier.cc/2016/12/07/bootstrap-幻灯片/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/09/04/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/10/03/javascript字符操作/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">字符串操作常用方法</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -232,639 +397,12 @@
 
 
 
-
-  
-    <article id="post-实例two" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/05/实例two/">实例one</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/05/实例two/" class="archive-article-date">
-  	<time datetime="2017-09-04T16:02:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>
-<p>##HEXO STSART</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/05/实例two/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-实例three" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/05/实例three/">实例one</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/05/实例three/" class="archive-article-date">
-  	<time datetime="2017-09-04T16:02:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>
-<p>##HEXO STSART</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/05/实例three/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-实例one" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/05/实例one/">实例one</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/05/实例one/" class="archive-article-date">
-  	<time datetime="2017-09-04T16:02:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <pre><code>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-</code></pre><p>##HEXO STSART</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<p>‘’’bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/05/实例one/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-实例four" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/05/实例four/">实例one</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/05/实例four/" class="archive-article-date">
-  	<time datetime="2017-09-04T16:02:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-05</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.</p>
-<h2 id="HEXO-STSART"><a href="#HEXO-STSART" class="headerlink" title="HEXO STSART"></a>HEXO STSART</h2><h3 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sfhksdfjkfsdlkfkllsdf fssdfkjlsf</div><div class="line">sdfkjfsldklflsfdjlksdf dfsasd</div><div class="line">sklsdfjlk sfdlksdfjkl</div></pre></td></tr></table></figure>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sfhksdfjkfsdlkfkllsdf fssdfkjlsf</div><div class="line">sdfkjfsldklflsfdjlksdf dfsasd</div><div class="line">sklsdfjlk sfdlksdfjkl</div></pre></td></tr></table></figure>
-<p>more info:::::dlsfljsdflk</p>
-<h3 id="Source-1"><a href="#Source-1" class="headerlink" title="Source"></a>Source</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sfhksdfjkfsdlkfkllsdf fssdfkjlsf</div><div class="line">sdfkjfsldklflsfdjlksdf dfsasd</div><div class="line">sklsdfjlk sfdlksdfjkl</div></pre></td></tr></table></figure>
-<p>more info:::::dlsfljsdflk</p>
-<p>###Source</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sfhksdfjkfsdlkfkllsdf fssdfkjlsf</div><div class="line">sdfkjfsldklflsfdjlksdf dfsasd</div><div class="line">sklsdfjlk sfdlksdfjkl</div></pre></td></tr></table></figure>
-<p>more info:::::dlsfljsdflk</p>
-<h3 id="Source-2"><a href="#Source-2" class="headerlink" title="Source"></a>Source</h3><p>‘’’ bash<br>sfhksdfjkfsdlkfkllsdf fssdfkjlsf<br>sdfkjfsldklflsfdjlksdf dfsasd<br>sklsdfjlk sfdlksdfjkl<br>‘’’</p>
-<p>more info:::::dlsfljsdflk</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/05/实例four/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hello - 副本 (6)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/04/Hello - 副本 (6)/">Hello</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/04/Hello - 副本 (6)/" class="archive-article-date">
-  	<time datetime="2017-09-04T05:52:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>正文：have a good day. wish a </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/04/Hello - 副本 (6)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hello - 副本 (2)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/04/Hello - 副本 (2)/">Hello</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/04/Hello - 副本 (2)/" class="archive-article-date">
-  	<time datetime="2017-09-04T05:52:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>正文：have a good day. wish a </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/04/Hello - 副本 (2)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hello" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/04/Hello/">Hello</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/04/Hello/" class="archive-article-date">
-  	<time datetime="2017-09-04T05:52:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>正文：have a good day. wish a </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/04/Hello/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hello - 副本 (3)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/04/Hello - 副本 (3)/">Hello</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/04/Hello - 副本 (3)/" class="archive-article-date">
-  	<time datetime="2017-09-04T05:52:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>正文：have a good day. wish a </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/04/Hello - 副本 (3)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hello - 副本 (4)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/04/Hello - 副本 (4)/">Hello</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/04/Hello - 副本 (4)/" class="archive-article-date">
-  	<time datetime="2017-09-04T05:52:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>正文：have a good day. wish a </p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/04/Hello - 副本 (4)/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
   
 
 
@@ -887,8 +425,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
