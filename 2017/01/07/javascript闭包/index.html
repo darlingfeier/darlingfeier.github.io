@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="//ifeier.cc">
   <title>javascript闭包学习 | Feier的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="###前言javascript的闭包往往是非常重要的对于工作，但往往许多人对其懵懵懂懂。闭包可以通过跨作用域，对变量进行共享。 ###作用域每个变量都有其身的作用域；大致可以分为全局作用域和局部作用域；案例：1234567&amp;lt;script&amp;gt;	var a=5;//全局变量	function f1()&amp;#123;		var b=6;//局部变量，只作用于函数体内。		return a;	&amp;#">
+  <meta name="description" content="前言javascript的闭包往往是非常重要的对于工作，但往往许多人对其懵懵懂懂。闭包可以通过跨作用域，对变量进行共享。">
 <meta name="keywords" content="javascript,闭包">
 <meta property="og:type" content="article">
 <meta property="og:title" content="javascript闭包学习">
 <meta property="og:url" content="//ifeier.cc/2017/01/07/javascript闭包/index.html">
 <meta property="og:site_name" content="Feier的博客">
-<meta property="og:description" content="###前言javascript的闭包往往是非常重要的对于工作，但往往许多人对其懵懵懂懂。闭包可以通过跨作用域，对变量进行共享。 ###作用域每个变量都有其身的作用域；大致可以分为全局作用域和局部作用域；案例：1234567&amp;lt;script&amp;gt;	var a=5;//全局变量	function f1()&amp;#123;		var b=6;//局部变量，只作用于函数体内。		return a;	&amp;#">
-<meta property="og:updated_time" content="2017-09-12T08:24:34.461Z">
+<meta property="og:description" content="前言javascript的闭包往往是非常重要的对于工作，但往往许多人对其懵懵懂懂。闭包可以通过跨作用域，对变量进行共享。">
+<meta property="og:updated_time" content="2017-09-14T02:34:49.789Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript闭包学习">
-<meta name="twitter:description" content="###前言javascript的闭包往往是非常重要的对于工作，但往往许多人对其懵懵懂懂。闭包可以通过跨作用域，对变量进行共享。 ###作用域每个变量都有其身的作用域；大致可以分为全局作用域和局部作用域；案例：1234567&amp;lt;script&amp;gt;	var a=5;//全局变量	function f1()&amp;#123;		var b=6;//局部变量，只作用于函数体内。		return a;	&amp;#">
+<meta name="twitter:description" content="前言javascript的闭包往往是非常重要的对于工作，但往往许多人对其懵懵懂懂。闭包可以通过跨作用域，对变量进行共享。">
   
     <link rel="alternative" href="/atom.xml" title="Feier的博客" type="application/atom+xml">
   
@@ -184,10 +184,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###前言<br>javascript的闭包往往是非常重要的对于工作，但往往许多人对其懵懵懂懂。闭包可以通过跨作用域，对变量进行共享。</p>
-<p>###作用域<br>每个变量都有其身的作用域；大致可以分为全局作用域和局部作用域；<br>案例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">	var a=5;//全局变量</div><div class="line">	function f1()&#123;</div><div class="line">		var b=6;//局部变量，只作用于函数体内。</div><div class="line">		return a;</div><div class="line">	&#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>javascript的闭包往往是非常重要的对于工作，但往往许多人对其懵懵懂懂。闭包可以通过跨作用域，对变量进行共享。<br><a id="more"></a></p>
+<h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><p>每个变量都有其身的作用域；大致可以分为全局作用域和局部作用域；<br>案例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">	var a=5;//全局变量</div><div class="line">	function f1()&#123;</div><div class="line">		var b=6;//局部变量，只作用于函数体内。</div><div class="line">		return a;</div><div class="line">	&#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <p>注意：一般要使用var创建变量，否则是创建一个全局变量；</p>
-<p>###闭包<br>通过返回子函数实现闭包：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">	var a=5;//全局变量</div><div class="line">	function f1()&#123;</div><div class="line">		var b=6;//局部变量，只作用于函数体内。</div><div class="line">		return function()&#123;</div><div class="line">			return b;</div><div class="line">		&#125;;</div><div class="line">	&#125;</div><div class="line">	var test=f1();</div><div class="line">	alert(test());//6</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><p>通过返回子函数实现闭包：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">	var a=5;//全局变量</div><div class="line">	function f1()&#123;</div><div class="line">		var b=6;//局部变量，只作用于函数体内。</div><div class="line">		return function()&#123;</div><div class="line">			return b;</div><div class="line">		&#125;;</div><div class="line">	&#125;</div><div class="line">	var test=f1();</div><div class="line">	alert(test());//6</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <p>通过创建子函数实现闭包：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">	var a;//全局变量</div><div class="line">	function f1()&#123;</div><div class="line">		var b=6;//局部变量，只作用于函数体内。</div><div class="line">		a=function()&#123;</div><div class="line">			return b;</div><div class="line">		&#125;;</div><div class="line">	&#125;</div><div class="line">	f1();</div><div class="line">	alert(a());//6</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <p>通过<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">	function f1(test)&#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	f1();</div><div class="line">	alert(a());//6</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 
