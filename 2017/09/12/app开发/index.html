@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ifeier.cc">
-  <title>Archives: 2017/2 | Feier的博客</title>
+  <title>app开发 | Feier的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Feier的博客">
-<meta property="og:url" content="//ifeier.cc/archives/2017/02/index.html">
+  <meta name="description" content="包初始化首先，创建一个文件夹进行项目开发，然后进行git初始化以及包初始化；12git initbower init 创建一个json配置文件；">
+<meta name="keywords" content="angular,bower,node,git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="app开发">
+<meta property="og:url" content="//ifeier.cc/2017/09/12/app开发/index.html">
 <meta property="og:site_name" content="Feier的博客">
-<meta property="og:description" content="擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
+<meta property="og:description" content="包初始化首先，创建一个文件夹进行项目开发，然后进行git初始化以及包初始化；12git initbower init 创建一个json配置文件；">
+<meta property="og:updated_time" content="2017-09-16T04:48:28.014Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Feier的博客">
-<meta name="twitter:description" content="擅长各项前端技能，深入研究移动端开发与前端性能。非专业视觉设计师。">
+<meta name="twitter:title" content="app开发">
+<meta name="twitter:description" content="包初始化首先，创建一个文件夹进行项目开发，然后进行git初始化以及包初始化；12git initbower init 创建一个json配置文件；">
   
     <link rel="alternative" href="/atom.xml" title="Feier的博客" type="application/atom+xml">
   
@@ -162,110 +164,202 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-app开发" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/08/导航栏/" class="archive-article-date">
-  	<time datetime="2017-02-08T05:02:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-08</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/02/08/导航栏/">导航栏</a>
+    <h1 class="article-title" itemprop="name">
+      app开发
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/09/12/app开发/" class="archive-article-date">
+  	<time datetime="2017-09-12T10:27:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="包初始化"><a href="#包初始化" class="headerlink" title="包初始化"></a>包初始化</h3><p>首先，创建一个文件夹进行项目开发，然后进行git初始化以及包初始化；<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git init</div><div class="line">bower init</div></pre></td></tr></table></figure></p>
+<p>创建一个json配置文件；<br><a id="more"></a></p>
+<h3 id="安装angularjs包"><a href="#安装angularjs包" class="headerlink" title="安装angularjs包"></a>安装angularjs包</h3><p>用bower安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bower install --save angular</div></pre></td></tr></table></figure></p>
+<h3 id="npm初始化"><a href="#npm初始化" class="headerlink" title="npm初始化"></a>npm初始化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm init</div></pre></td></tr></table></figure>
+<h3 id="gulp模块安装"><a href="#gulp模块安装" class="headerlink" title="gulp模块安装"></a>gulp模块安装</h3><p>gulp先要全局安装，然后安装到项目中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm i --save-dev gulp</div></pre></td></tr></table></figure></p>
+<p>然后引入其他模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm i --save-dev gulp-clean gulp-concat gulp-connect gulp-cssmin gulp-imagemin gulp-less gulp-load-plugins gulp-uglify open</div></pre></td></tr></table></figure></p>
+<h3 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h3><p>在项目根目录下创建一个gulpfile.js文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">var gulp = require(&apos;gulp&apos;); 	//引入gulp模块</div><div class="line">var $ = require(&apos;gulp-load-plugins&apos;)();		//引入gulp-load-plugins模块，并且自调用。然后可以使用$调用gulp其他模块。</div><div class="line">var open = require(&apos;open&apos;);		引入open 模块。</div><div class="line">&lt;!-- 定义变量 --&gt;</div><div class="line"></div><div class="line">var app = &#123;</div><div class="line">	srcPath:&apos;src/&apos;,</div><div class="line">	devPath:&apos;build/&apos;,</div><div class="line">	prdPath:&apos;dist/&apos;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">&lt;!-- 操作文件 --&gt;</div><div class="line">gulp.task(&apos;lib&apos;,function() &#123;</div><div class="line">	gulp.src(&apos;bower_components/**/*.js&apos;)</div><div class="line">	.pipe(gulp.dest(app.devPath + &apos;vendor&apos;))</div><div class="line">	.pipe(gulp.dest(app.prdPath + &apos;vendor&apos;))</div><div class="line">	.pipe($.connect.reload());</div><div class="line"></div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">bower</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/02/07/git命令/" class="archive-article-date">
-  	<time datetime="2017-02-07T06:44:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/02/07/git命令/">git常用命令</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
+      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">References</a>
-        		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://ifeier.cc/2017/09/12/app开发/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/09/12/日语学习/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          日语学习
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/09/12/music/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">音乐</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
 
 
           </div>
@@ -288,8 +382,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
